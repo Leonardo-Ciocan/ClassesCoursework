@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="TimetableApp.Intro"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    	<FlipView SelectedIndex="0">
+    		<FlipViewItem IsSelected="True">
+    			<Grid>
+    				<Grid.ChildrenTransitions>
+    					<TransitionCollection/>
+    				</Grid.ChildrenTransitions>
+    				<Grid Margin="375,198,374,126" VerticalAlignment="Center" HorizontalAlignment="Center" Height="438">
+    					<Grid.ChildrenTransitions>
+    						<TransitionCollection>
+    							<EntranceThemeTransition FromVerticalOffset="170" FromHorizontalOffset="0"/>
+    						</TransitionCollection>
+    					</Grid.ChildrenTransitions>
+    					<TextBlock HorizontalAlignment="Left" Margin="70,0,0,0" TextWrapping="Wrap" Text="W" VerticalAlignment="Top" FontSize="96"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="165,0,0,0" TextWrapping="Wrap" Text="E" VerticalAlignment="Top" FontSize="96"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="214,0,0,0" TextWrapping="Wrap" Text="L" VerticalAlignment="Top" FontSize="96"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="259,0,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" FontSize="96"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="318,0,0,0" TextWrapping="Wrap" Text="O" VerticalAlignment="Top" FontSize="96"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="390,0,0,0" TextWrapping="Wrap" Text="M" VerticalAlignment="Top" FontSize="96"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="476,0,0,0" TextWrapping="Wrap" Text="E" VerticalAlignment="Top" FontSize="96"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="279,115,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" FontSize="64"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="313,115,0,0" TextWrapping="Wrap" Text="O" VerticalAlignment="Top" FontSize="64"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="0,174,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" FontSize="160" Foreground="#FF0097FF"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="99,174,0,0" TextWrapping="Wrap" Text="L" VerticalAlignment="Top" FontSize="160" Foreground="#FF0097FF"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="174,174,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" FontSize="160" Foreground="#FF0097FF"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="277,174,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" FontSize="160" Foreground="#FF0097FF"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="360,174,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" FontSize="160" Foreground="#FF0097FF"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="445,174,0,0" TextWrapping="Wrap" Text="E" VerticalAlignment="Top" FontSize="160" Foreground="#FF0097FF"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="526,174,0,0" TextWrapping="Wrap" Text="S" VerticalAlignment="Top" FontSize="160" Foreground="#FF0097FF"/>
+    					<TextBlock HorizontalAlignment="Center" Margin="0,392,0,0" TextWrapping="Wrap" Text="Swype left to get started" VerticalAlignment="Top" FontSize="21.333"/>
+    				</Grid>
+    			</Grid>
+    		</FlipViewItem>
+    		<FlipViewItem>
+    			<Grid>
+    				<Grid.ChildrenTransitions>
+    					<TransitionCollection/>
+    				</Grid.ChildrenTransitions>
+    				<Image Margin="0" Source="help0.png" Stretch="Fill" Width="1024" HorizontalAlignment="Center" VerticalAlignment="Center" Height="768"/>
+    				<Button x:Name="start" Content="Start" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="240,0,200,192" Background="#B30068FF" Foreground="White" FontSize="96"/>
+    			</Grid>
+    		</FlipViewItem>
+    	</FlipView>
+
+    </Grid>
+</Page>

@@ -1,0 +1,52 @@
+﻿<UserControl
+    x:Class="StudentDataBundleApp.NoteEditor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="563" Width="1200" Background="White">
+    
+    <Grid Background="White">
+    	<Grid x:Name="rightSide" HorizontalAlignment="Right" Width="274" Background="#FF0275FF">
+    		<TextBlock x:Name="name" HorizontalAlignment="Center" Height="35" Margin="10,10,10,0" TextWrapping="Wrap" Text="Name of note" VerticalAlignment="Top" Width="254" FontSize="29.333" TextAlignment="Center"/>
+    		<TextBlock x:Name="description" HorizontalAlignment="Center" Height="128" Margin="10,50,10,0" TextWrapping="Wrap" Text="This is a very long description detailing the note and what not..." VerticalAlignment="Top" Width="254" FontSize="14.667" Foreground="#FF212121"/>
+    		<ScrollViewer Margin="0,183,0,0" >
+    			<Grid Background="White" Height="516" Width="264">
+    				<Grid x:Name="propertiesHolder" Margin="0,68,0,0">
+    					<TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Properties" VerticalAlignment="Top" Foreground="Black" FontSize="21.333"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="27,41,0,0" TextWrapping="Wrap" Text="Font size" VerticalAlignment="Top" Foreground="Black" FontSize="16"/>
+    					<Slider x:Name="sizeSlider" HorizontalAlignment="Left" Height="37" Margin="27,49,0,0" VerticalAlignment="Top" Width="183" Maximum="36" Minimum="8" Value="14"/>
+    					<TextBlock HorizontalAlignment="Right" Margin="0,41,9,0" TextWrapping="Wrap" Text="{Binding Value, ElementName=sizeSlider}" VerticalAlignment="Top" Foreground="Black" FontSize="16" FontWeight="Bold" TextAlignment="Right"/>
+    					<TextBlock HorizontalAlignment="Left" Margin="27,203,0,0" TextWrapping="Wrap" Text="Background" VerticalAlignment="Top" Foreground="Black" FontSize="16" Width="95"/>
+    					<CheckBox x:Name="bold" Content="Bold" HorizontalAlignment="Left" Height="27" Margin="27,98,0,0" VerticalAlignment="Top" Width="117"/>
+    					<CheckBox x:Name="italic" Content="Italic" HorizontalAlignment="Left" Height="27" Margin="27,130,0,0" VerticalAlignment="Top" Width="117"/>
+    					<CheckBox x:Name="center" Content="Center Text" HorizontalAlignment="Left" Height="27" Margin="27,162,0,0" VerticalAlignment="Top" Width="117"/>
+    					<ScrollViewer HorizontalAlignment="Left" Margin="0,222,0,0" VerticalAlignment="Top" Width="264" Height="80" Background="White" VerticalScrollMode="Disabled" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+    						<local:ColorChooser x:Name="colorPicker" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+    					</ScrollViewer>
+    					<TextBlock HorizontalAlignment="Left" Margin="27,323,0,0" TextWrapping="Wrap" Text="Foreground" VerticalAlignment="Top" Foreground="Black" FontSize="16" Width="95"/>
+    					<ScrollViewer HorizontalAlignment="Left" Margin="0,342,0,0" VerticalAlignment="Top" Width="264" Height="80" Background="White" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+    						<local:ColorChooser x:Name="colorPicker2" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+    					</ScrollViewer>
+    				</Grid>
+    				<ToggleSwitch x:Name="editableSwitch" Header="" HorizontalAlignment="Center" Height="63" Margin="35,5,10,0" VerticalAlignment="Top" Width="229" OffContent="Writing OFF" OnContent="Writing ON" FontSize="21.333"/>
+    			</Grid>
+    		</ScrollViewer>
+    	</Grid>
+    	<ScrollViewer Margin="274,0">
+    		<StackPanel Orientation="Vertical">
+    			<StackPanel x:Name="fragmentHolder"/>
+    			<Button x:Name="addButton" Content="Add new note" HorizontalAlignment="Center" Height="36" VerticalAlignment="Top" Width="220" Background="#6C9C9C9C" Margin="216,10"/>
+    		</StackPanel>
+    	</ScrollViewer>
+    	<Grid x:Name="leftSide" Background="#FF0275FF" Width="274" HorizontalAlignment="Left">
+    		<Button x:Name="backButton" Content="Button" HorizontalAlignment="Left" Margin="3,2,0,0" Style="{StaticResource BackButtonStyle}" VerticalAlignment="Top"/>
+    		<ScrollViewer Margin="0,55,0,0">
+    			<StackPanel x:Name="notesHolder" VerticalAlignment="Top"/>
+    		</ScrollViewer>
+    		<TextBlock x:Name="timetableName" HorizontalAlignment="Left" Height="40" Margin="56,10,0,0" TextWrapping="Wrap" Text="StudentDataBundle" VerticalAlignment="Top" Width="208" FontSize="29.333"/>
+    	</Grid>
+
+    </Grid>
+</UserControl>

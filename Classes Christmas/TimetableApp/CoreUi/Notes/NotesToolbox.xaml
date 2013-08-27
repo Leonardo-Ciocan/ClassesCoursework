@@ -1,0 +1,19 @@
+﻿<UserControl
+    x:Class="TimetableApp.NotesToolbox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="400" Height="167.373">
+    
+    <Grid Background="White">
+    	<TextBlock HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" Text="Font size" VerticalAlignment="Top" Foreground="Black" FontSize="16"/>
+    	<Slider x:Name="sizeSlider" HorizontalAlignment="Left" Height="37" Margin="10,20,0,0" VerticalAlignment="Top" Width="380" Maximum="36" Minimum="8" Value="14"/>
+    	<TextBlock HorizontalAlignment="Right" Margin="0,12,303,0" TextWrapping="Wrap" Text="{Binding Value, ElementName=sizeSlider}" VerticalAlignment="Top" Foreground="Black" FontSize="16" FontWeight="Bold" TextAlignment="Right"/>
+    	<CheckBox x:Name="bold" Content="Bold" HorizontalAlignment="Left" Height="27" Margin="10,69,0,0" VerticalAlignment="Top" Width="117"/>
+    	<CheckBox x:Name="italic" Content="Italic" HorizontalAlignment="Left" Height="27" Margin="10,101,0,0" VerticalAlignment="Top" Width="117"/>
+    	<CheckBox x:Name="center" Content="Center Text" HorizontalAlignment="Left" Height="27" Margin="10,133,0,0" VerticalAlignment="Top" Width="117"/>
+    </Grid>
+</UserControl>

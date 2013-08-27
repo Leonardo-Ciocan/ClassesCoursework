@@ -1,0 +1,16 @@
+﻿<UserControl
+    x:Class="TimetableApp.BoxInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="398" Height="486" Background="Black">
+    
+    <Grid Background="White">
+    	<Ellipse Fill="#FFFFC500" HorizontalAlignment="Left" Height="79" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="79"/>
+    	<TextBlock HorizontalAlignment="Left" Height="33" Margin="14,32,0,0" TextWrapping="Wrap" Text="A203" VerticalAlignment="Top" Width="75" FontSize="32"/>
+    	<TextBlock HorizontalAlignment="Left" Height="48" Margin="116,32,0,0" TextWrapping="Wrap" Text="Some name h[sr]e" VerticalAlignment="Top" Width="272" FontSize="32"/>
+
+    </Grid>
+</UserControl>

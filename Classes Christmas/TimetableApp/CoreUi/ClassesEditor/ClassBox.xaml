@@ -1,0 +1,34 @@
+﻿<UserControl
+    x:Class="TimetableApp.ClassBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="400" Width="600" Height="655" Padding="15,0" Margin="20,0">
+    
+    <Border x:Name="border" BorderThickness="5" BorderBrush="#FFFF7400">
+    
+		<Grid Background="White">
+			<TextBlock HorizontalAlignment="Left" Margin="10,24,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontSize="24"/>
+			<TextBox x:Name="name" HorizontalAlignment="Left" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="576"/>
+			<TextBlock HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" Text="NotesEditor" VerticalAlignment="Top" FontSize="24"/>
+			<TextBox x:Name="notes" HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="576" Height="138" AcceptsReturn="True"/>
+			<TextBlock HorizontalAlignment="Left" Margin="10,268,0,0" TextWrapping="Wrap" Text="Teacher" VerticalAlignment="Top" FontSize="24"/>
+			<TextBox x:Name="teacher" HorizontalAlignment="Left" Margin="10,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+			<TextBlock HorizontalAlignment="Left" Margin="333,268,0,0" TextWrapping="Wrap" Text="Room" VerticalAlignment="Top" FontSize="24"/>
+			<TextBox x:Name="room" HorizontalAlignment="Left" Margin="333,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
+			<local:ColorChooser x:Name="color" HorizontalAlignment="Left" Margin="15,327,-21,0" VerticalAlignment="Top"/>
+			<ScrollViewer Height="190" VerticalAlignment="Top" Margin="-1,455,-1,-1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" >
+				<StackPanel x:Name="holder" Orientation="Horizontal" Height="190" HorizontalAlignment="Left">
+					<StackPanel.Background>
+						<SolidColorBrush Color="{Binding BorderBrush.Color, ElementName=border}"/>
+					</StackPanel.Background>
+				</StackPanel>
+			</ScrollViewer>
+			<Button x:Name="add" Content="Add lesson time" HorizontalAlignment="Left" Margin="449,421,-1,0" VerticalAlignment="Top" Width="142"/>
+			<local:UniversalButton x:Name="deleteBtn" HorizontalAlignment="Left" Margin="538,-3,-3,0" VerticalAlignment="Top" Foreground="#FFFF4007" Icon="&#xE10A;"/>
+		</Grid>
+	</Border>
+</UserControl>

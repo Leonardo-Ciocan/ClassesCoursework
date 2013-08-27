@@ -1,0 +1,30 @@
+﻿<local:EditableItem
+    x:Class="TimetableApp.StructureBlockControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="364" Height="491" Padding="0,0,10,0" Margin="0,0,10,0"
+	xmlns:cl="using:Callisto.Effects" >
+    
+    <Border BorderThickness="1" BorderBrush="#FF535353">
+    
+		<Grid x:Name="root" Background="#FFFF6800">
+
+			<TextBlock x:Name="name" Height="43" Margin="10,0" TextWrapping="Wrap" Text="Module name" VerticalAlignment="Top" FontSize="22.667" Foreground="White" TextAlignment="Center"/>
+			<ScrollViewer HorizontalAlignment="Left" Height="374" Margin="0,72,0,0" VerticalAlignment="Top" Width="362" Background="#33000000">
+				<StackPanel x:Name="topicsHolder" VerticalAlignment="Top"/>
+
+			</ScrollViewer>
+			<TextBox x:Name="nameEdit" HorizontalAlignment="Left" Height="37" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="342" Visibility="Collapsed"/>
+			<TextBlock x:Name="addButton" cl:Tilt.IsTiltEnabled="True" HorizontalAlignment="Left" Height="38" Margin="10,451,0,0" TextWrapping="Wrap" Text="Add Topic" VerticalAlignment="Top" Width="141" Foreground="White" FontSize="32"/>
+			<TextBlock x:Name="deleteButton" cl:Tilt.IsTiltEnabled="True" HorizontalAlignment="Left" Height="38" Margin="261,451,0,0" TextWrapping="Wrap" Text="Delete" VerticalAlignment="Top" Foreground="White" FontSize="32"/>
+			<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Studied" VerticalAlignment="Top" Width="54" FontSize="16" Margin="10,48,298,0" Foreground="White"/>
+			<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Revised" VerticalAlignment="Top" Width="54" FontSize="16" Margin="84,48,0,0" Foreground="White"/>
+			<Grid Margin="0,72,283,43" Background="#33000000" Visibility="Collapsed"/>
+			<Grid Margin="79,72,202,43" Background="#13000000" Visibility="Collapsed"/>
+
+		</Grid>
+	</Border>
+</local:EditableItem>

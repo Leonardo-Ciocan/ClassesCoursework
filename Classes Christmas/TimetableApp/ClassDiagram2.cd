@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TimetableApp.App">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAQAAAAAAIAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.AnimationHelper">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="TimetableApp.AnimationHelper.SmoothMoveType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Core\AnimationHelper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EACAAAAAAACAAAAAAAAAAAAAQAAAAQAAAAAAAAAIAQA=</HashCode>
+      <FileName>Core\AnimationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.BubbleSort">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\BubbleSort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Constants">
+    <Position X="24.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAIAAEQAAAAAAAAAA=</HashCode>
+      <FileName>Core\Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.EditableItem">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAMAAoCAgAAAAA=</HashCode>
+      <FileName>Core\Core.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.CoreData">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAIAAAQQAEAEAAAAAAAAAAAIAAAACJAAAAABA=</HashCode>
+      <FileName>Core\CoreData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.CoreTime">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAACACAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\CoreTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Time">
+    <Position X="24.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAgAQAAAGQAGAAgAAAAAAAAAAAAAAAAAABQA=</HashCode>
+      <FileName>Core\CoreTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Validator">
+    <Position X="24.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFAAEAAAABAAAAAAAAQAAAkAAAAABQAIAAAAQAAAE=</HashCode>
+      <FileName>Core\Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ClassBox">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAABEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\ClassesEditor\ClassBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ClassesEditor">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\ClassesEditor.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.DefinitionControl">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Definitions\DefinitionControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Definitions">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Definitions.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.HomeworkItem">
+    <Position X="23" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Homework\HomeworkItem.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.SimpleDatePicker">
+    <Position X="24.75" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.SimpleDatePicker.BackPressedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Homework\SimpleDatePicker.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJAAAAAAAAAAAAAAAAAAgAAAEAAAAAACAAAA=</HashCode>
+      <FileName>CoreUi\Homework\SimpleDatePicker.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Homework">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Homework.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Intro">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Intro.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.DefinitionPreview">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.DefinitionPreview.OnOpenHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\MainPage\DefinitionPreview.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAEAAEAAAAAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\MainPage\DefinitionPreview.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.HomeworkPreview">
+    <Position X="24.75" Y="2.5" Width="1.75" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.HomeworkPreview.OnOpenHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\MainPage\HomeworkPreview.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Struct Name="TimetableApp.HomeworkPreview.HomeworkData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\MainPage\HomeworkPreview.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAAAAAA=</HashCode>
+      <FileName>CoreUi\MainPage\HomeworkPreview.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.HomeworkPreviewComponent">
+    <Position X="12.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\MainPage\HomeworkPreviewComponent.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ModulePreview">
+    <Position X="16" Y="4.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.ModulePreview.OnOpenHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\MainPage\ModulePreview.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\MainPage\ModulePreview.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ModulePreviewComponent">
+    <Position X="17.75" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\MainPage\ModulePreviewComponent.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.NotePreview">
+    <Position X="16" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.NotePreview.OnOpenHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\MainPage\NotePreview.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\MainPage\NotePreview.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.StructurePreview">
+    <Position X="21.25" Y="6.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.StructurePreview.OnOpenHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\MainPage\StructurePreview.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\MainPage\StructurePreview.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.TimetableView">
+    <Position X="16" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>CoreUi\MainPage\TimetableView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ColorChooser">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.ColorChooser.ColorChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Misc\ColorChooser.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAARAAAA=</HashCode>
+      <FileName>CoreUi\Misc\ColorChooser.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.EventControl">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAEAAAAAAAAAAAAAAAAAAAAAAgAQAAQ=</HashCode>
+      <FileName>CoreUi\Misc\EventControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.EventPreview">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Misc\EventPreview.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.InstanceControl">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.InstanceControl.InstanceChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Misc\InstanceControl.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TimetableApp.InstanceControl.DeletedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Misc\InstanceControl.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAGAIAAAAAAAAAAAAAQAAAgABIAAAAA=</HashCode>
+      <FileName>CoreUi\Misc\InstanceControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.BoxInfo">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Misc\StartPageControls\BoxInfo.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.EventPreviewBox">
+    <Position X="17.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>CoreUi\Misc\StartPageControls\EventPreviewBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.NewTimetableBox">
+    <Position X="21.25" Y="4.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.NewTimetableBox.CreateHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Misc\StartPageControls\NewTimetableBox.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAQAIAAAAAACAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Misc\StartPageControls\NewTimetableBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.TimetableBox">
+    <Position X="14.25" Y="7.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.TimetableBox.DeletedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Misc\StartPageControls\TimetableBox.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TimetableApp.TimetableBox.OpenHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Misc\StartPageControls\TimetableBox.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAAAAAEACAACIAEAIAABAAAAAAAAAAAAAAAAAoAAAAA=</HashCode>
+      <FileName>CoreUi\Misc\StartPageControls\TimetableBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ModuleBox">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.ModuleBox.ChangedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Modules\ModuleBox.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TimetableApp.ModuleBox.DeletedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Modules\ModuleBox.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Modules\ModuleBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Modules">
+    <Position X="19.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Modules.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.NoteBox">
+    <Position X="24.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Notes\NoteBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.NoteFragmentControl">
+    <Position X="3" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>CoreUi\Notes\NoteFragmentControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.NotesToolbox">
+    <Position X="19.5" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.NotesToolbox.OnChangeHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Notes\NotesToolbox.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Notes\NotesToolbox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Notes">
+    <Position X="17.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Notes.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.PieChart">
+    <Position X="21.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAiABAAAAAAACAAAADAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>CoreUi\PieChart.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ModuleList">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.ModuleList.ChosenEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Reusables\ModuleList.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Reusables\ModuleList.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ModuleListItem">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAQAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Reusables\ModuleListItem.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.StructureBox">
+    <Position X="19.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Structure\StructureBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Structure">
+    <Position X="16" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Structure.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.StructureBlockControl">
+    <Position X="0.5" Y="1.25" Width="1.75" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.StructureBlockControl.ChangedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Topics\StructureBlockBox.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TimetableApp.StructureBlockControl.DeletedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Topics\StructureBlockBox.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAEAIAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Topics\StructureBlockBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.TopicControl">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.TopicControl.ChangedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Topics\TopicControl.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="TimetableApp.TopicControl.DeletedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreUi\Topics\TopicControl.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <InheritanceLine Type="TimetableApp.EditableItem" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="3.405" />
+        <Point X="6" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreUi\Topics\TopicControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.UniversalButton">
+    <Position X="19.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>CoreUi\UniversalButton.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.UniversalGrid">
+    <Position X="21.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAIAAwABBAAEBAAAAAAAAAAAQBAAAABAAAA=</HashCode>
+      <FileName>CoreUi\UniversalGrid.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.UniversalTextBox">
+    <Position X="23" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>CoreUi\UniversalTextBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.MainPage">
+    <Position X="23" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAQAAAAAEAAAAAAAQAAAAAAAEAAAAAAAAAQAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.HomeworkTask">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAQAAIAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Definition">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACAAAAAAAABA=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.NoteObject">
+    <Position X="14.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Module">
+    <Position X="24.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAQAAAAABAAAAAAAAUAAABA=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.StructureBlock">
+    <Position X="17.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Topic">
+    <Position X="17.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Note">
+    <Position X="23" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAgAAAAQAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.NoteFragment">
+    <Position X="12.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAgACAAAAAAAhAAAAAAAAAAAAAAAAABAAE=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.t_stream">
+    <Position X="23" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\EventExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.EventModel">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEgAQAAAAAAAAAAAAIAAAQQAAAAAAAAQAAAAAAAABA=</HashCode>
+      <FileName>Models\EventModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Instance">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAIIAgAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\EventModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.Timetable">
+    <Position X="12.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAACAQAQAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Timetable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.SearchResultsPage">
+    <Position X="23" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQASAAAAAAAAAAAAIAAAgAAA=</HashCode>
+      <FileName>SearchResultsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.StartPage">
+    <Position X="14.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAgAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StartPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.EventListControl">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.EventListControl.SelectionChangedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>UI\General\EventListControl.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAEQAAAABAAAAEAAAAAQAAAAAY=</HashCode>
+      <FileName>UI\General\EventListControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.EventListItem">
+    <Position X="24.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAQAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\General\EventListItem.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.EventPanel">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="TimetableApp.EventPanel.BackPressedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>UI\General\EventPanel.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEBgAAAAAAAACAEgAAAAAAEBBAAyGACAAAQAAAAAAAQ=</HashCode>
+      <FileName>UI\General\EventPanel.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.ExtendedTextBox">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>UI\General\ExtendedTextBox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.HomeworkView">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>UI\TaskPageControls\HomeworkView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimetableApp.SimpleEventItem">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAABAAAAAAAAAI=</HashCode>
+      <FileName>UI\TaskPageControls\SimpleEventItem.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TimetableApp.TimeOverlapData">
+    <Position X="12.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\CoreTime.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TimetableApp.ValidatorResponse">
+    <Position X="14.25" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Validator.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

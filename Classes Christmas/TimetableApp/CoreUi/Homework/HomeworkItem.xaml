@@ -1,0 +1,67 @@
+﻿<UserControl
+    x:Class="TimetableApp.HomeworkItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="226" Width="475" Background="#FF005DFF" BorderThickness="0" Margin="5">
+	<UserControl.Resources>
+	
+		<Storyboard x:Name="introDate">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="grid">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-475"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="datePicker">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-475"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="exitDate">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="grid">
+				<SplineDoubleKeyFrame KeyTime="0" Value="-475"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="datePicker">
+				<SplineDoubleKeyFrame KeyTime="0" Value="-475"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.Transitions>
+		<TransitionCollection>
+			<EntranceThemeTransition/>
+		</TransitionCollection>
+	</UserControl.Transitions>
+    
+    <Border x:Name="root" BorderThickness="1" BorderBrush="#FF8B8B8B" Background="#FFBFBFBF">
+		<Grid>
+            <Grid.Clip>
+                <RectangleGeometry Rect="0,0,475,226"/>
+            </Grid.Clip>
+                <local:SimpleDatePicker x:Name="datePicker" Margin="473,0,-475,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="475" Height="224">
+    			<local:SimpleDatePicker.RenderTransform>
+    				<CompositeTransform/>
+    			</local:SimpleDatePicker.RenderTransform>
+    		</local:SimpleDatePicker>
+                <Grid x:Name="grid" RenderTransformOrigin="0.5,0.5">
+    			<Grid.RenderTransform>
+    				<CompositeTransform/>
+    			</Grid.RenderTransform>
+    			<Grid.ChildrenTransitions>
+    				<TransitionCollection>
+    					<EntranceThemeTransition FromHorizontalOffset="-10"/>
+    				</TransitionCollection>
+    			</Grid.ChildrenTransitions>
+    			<Grid Margin="0,139,0,0">
+    				<TextBlock HorizontalAlignment="Left" Margin="247,52,0,14" TextWrapping="Wrap" Text="Due on" FontSize="16" Width="63" VerticalAlignment="Center"/>
+    				<Button x:Name="dateButton" Content="01/08/12" HorizontalAlignment="Left" Margin="298,44,0,3" VerticalAlignment="Center" Width="175" BorderBrush="#4B000000" BorderThickness="2" Background="{x:Null}"/>
+    				<ToggleSwitch x:Name="completedSwitch" Header="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="56" OffContent="Incomplete" OnContent="Completed" FontSize="13.333" Height="46" Margin="0,0,0,4"/>
+                	</Grid>
+    			<TextBox x:Name="_description" Height="170" Margin="56,5,10,0" TextWrapping="Wrap" VerticalAlignment="Top" AcceptsReturn="True"/>
+    			<local:UniversalButton x:Name="deleteButton" HorizontalAlignment="Left" Margin="-4,0,0,0" VerticalAlignment="Top" Foreground="White" Icon="&#xE0A4;"/>
+    		</Grid>
+    	</Grid>
+	</Border>
+</UserControl>

@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="TimetableApp.ClassesEditor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    	<Grid Height="66" VerticalAlignment="Top">
+    		<Grid.ChildrenTransitions>
+    			<TransitionCollection>
+    				<EntranceThemeTransition FromHorizontalOffset="1000"/>
+    			</TransitionCollection>
+    		</Grid.ChildrenTransitions>
+    		<Grid.Transitions>
+    			<TransitionCollection/>
+    		</Grid.Transitions>
+    		<TextBlock x:Name="title" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Classes editor" VerticalAlignment="Top" Foreground="Black" FontSize="32"/>
+    		<Grid HorizontalAlignment="Left" Margin="0,102,0,0" Width="1366"/>
+    		<local:UniversalButton x:Name="add" HorizontalAlignment="Right" Margin="0,5,10,0" VerticalAlignment="Top" Foreground="Black" Icon="&#xE0B6;"/>
+    		<local:UniversalButton x:Name="back" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Foreground="Black" Icon="&#xE0A9;"/>
+    	</Grid>
+    	<ScrollViewer Margin="0,71,0,0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+    		<StackPanel x:Name="holder" HorizontalAlignment="Left" Orientation="Horizontal">
+    			<StackPanel.ChildrenTransitions>
+    				<TransitionCollection>
+    					<EntranceThemeTransition FromVerticalOffset="500" FromHorizontalOffset="0"/>
+    				</TransitionCollection>
+    			</StackPanel.ChildrenTransitions>
+    		</StackPanel>
+    	</ScrollViewer>
+
+    </Grid>
+</Page>

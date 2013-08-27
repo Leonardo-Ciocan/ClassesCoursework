@@ -1,0 +1,16 @@
+﻿<local:EditableItem
+    x:Class="TimetableApp.ModuleBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="487" Height="212" Foreground="#FF003AFF" Margin="10,10,10,0">
+    
+    <Grid x:Name="root" Background="#FF0068FF">
+    	<Button x:Name="deleteButton" HorizontalAlignment="Left" Style="{StaticResource DeleteAppBarButtonStyle}" VerticalAlignment="Top" Height="68" Width="80" Margin="-19,0,0,0" Foreground="White"/>
+    	<TextBlock x:Name="moduleName" HorizontalAlignment="Left" Height="139" Margin="10,73,0,0" TextWrapping="Wrap" Text="Mechanics 2" VerticalAlignment="Top" Width="467" Foreground="White" FontSize="48" TextAlignment="Center"/>
+    	<TextBox x:Name="moduleNameEdit" HorizontalAlignment="Left" Height="144" Margin="10,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467" FontSize="48" TextAlignment="Center" Text="Mehanics 2" Visibility="Collapsed"/>
+
+    </Grid>
+</local:EditableItem>

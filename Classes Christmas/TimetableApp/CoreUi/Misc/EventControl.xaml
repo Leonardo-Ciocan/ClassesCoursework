@@ -1,0 +1,22 @@
+﻿<UserControl
+    x:Class="TimetableApp.EventControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="147" Width="187" Margin="0">
+    
+    <Grid Margin="1">
+    	<Rectangle x:Name="root" Fill="#FF60A1FF" StrokeThickness="0"/>
+    	<Rectangle x:Name="root_Copy" Fill="#33FFFFFF" StrokeThickness="0" Margin="2"/>
+    	<Grid Background="#33FFFFFF" Height="55" VerticalAlignment="Top">
+
+    		<TextBlock x:Name="SubjectName" TextWrapping="Wrap" Text="Subject" FontSize="24" TextAlignment="Center" Foreground="Black" Margin="0,0,1,26" HorizontalAlignment="Center"/>
+    		<TextBlock x:Name="_time" HorizontalAlignment="Left" Margin="0,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontSize="18.667" Foreground="#FF343434" TextAlignment="Center"/>
+    	</Grid>
+    	<TextBlock x:Name="ClassName" HorizontalAlignment="Left" Height="34" Margin="10,91,0,0" TextWrapping="Wrap" Text="A304" VerticalAlignment="Top" Width="175" FontSize="21.333" FontWeight="Bold"/>
+    	<TextBlock x:Name="TeacherName" HorizontalAlignment="Left" Height="34" Margin="10,72,0,0" TextWrapping="Wrap" Text="Dr Peter Parker" VerticalAlignment="Top" Width="175" FontSize="18.667"/>
+
+    </Grid>
+</UserControl>

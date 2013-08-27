@@ -1,0 +1,23 @@
+﻿<UserControl
+    x:Class="TimetableApp.ModuleControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="400" Width="320" Height="491">
+    
+    <Grid Background="White">
+    	<TextBlock HorizontalAlignment="Left" Height="29" Margin="119,0,0,0" TextWrapping="Wrap" Text="Module name" VerticalAlignment="Top" Width="201" FontSize="32"/>
+    	<Grid Margin="0,0,261,0" Background="#FFEEEEEE">
+    		<TextBlock HorizontalAlignment="Center" Height="40" TextWrapping="Wrap" Text="Studied" VerticalAlignment="Top" Width="54" FontSize="16" Margin="0,10,0,0"/>
+
+    	</Grid>
+    	<Grid Margin="59,0,202,0" Background="#FFCBCBCB">
+    		<TextBlock HorizontalAlignment="Center" Height="40" TextWrapping="Wrap" Text="Revised" VerticalAlignment="Top" Width="54" FontSize="16" Margin="0,10,0,0"/>
+
+    	</Grid>
+
+    </Grid>
+</UserControl>

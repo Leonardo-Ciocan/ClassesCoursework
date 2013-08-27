@@ -1,0 +1,42 @@
+﻿<UserControl
+    x:Class="TimetableApp.EventListControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="270" Height="552">
+    
+    <Grid Background="White">
+    	<Grid Background="#FF008BFF" Height="60" VerticalAlignment="Top">
+    		<TextBlock Height="54" TextWrapping="Wrap" Text="Classes" VerticalAlignment="Top" FontSize="48" Foreground="Black" Margin="76,0,0,0"/>
+    	</Grid>
+    	<Grid Background="#FF008BFF" Height="89" VerticalAlignment="Bottom">
+    		<Grid.RowDefinitions>
+    			<RowDefinition/>
+    		</Grid.RowDefinitions>
+    		<Grid.ColumnDefinitions>
+    			<ColumnDefinition/>
+    		</Grid.ColumnDefinitions>
+    		<Button HorizontalAlignment="Right" Style="{StaticResource AddAppBarButtonStyle}" VerticalAlignment="Bottom" FontSize="20" CharacterSpacing="-1" Click="add_clicked" Width="86">
+    			<Button.Transitions>
+    				<TransitionCollection>
+    					<EntranceThemeTransition/>
+    				</TransitionCollection>
+    			</Button.Transitions>
+    		</Button>
+    		<Button x:Name="deleteButton" HorizontalAlignment="Right" Style="{StaticResource DeleteAppBarButtonStyle}" VerticalAlignment="Bottom" FontSize="20" CharacterSpacing="-1" Margin="0,0,66,0" Tapped="delete_tapped" Foreground="#FF020202" IsEnabled="False" Width="86">
+    			<Button.Transitions>
+    				<TransitionCollection>
+    					<EntranceThemeTransition/>
+    				</TransitionCollection>
+    			</Button.Transitions>
+    		</Button>
+
+    	</Grid>
+    	<ScrollViewer Margin="0,60,0,89" BorderThickness="0" BorderBrush="Black">
+    		<StackPanel x:Name="root" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    	</ScrollViewer>
+
+    </Grid>
+</UserControl>

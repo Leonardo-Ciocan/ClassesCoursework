@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A71C434D-5882-4000-B738-F16F63CFC2E2}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TimetableApp</RootNamespace>
+    <AssemblyName>TimetableApp</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>TimetableApp_StoreKey.pfx</PackageCertificateKeyFile>
+    <ExpressionBlendVersion>5.0.31017.0</ExpressionBlendVersion>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>C9687C9F7962229F92E4A4DA05D1B814D83B4B0A</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Homework\DatePicker.xaml.cs">
+      <DependentUpon>DatePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\MainPage\ModulePreviewComponent.xaml.cs">
+      <DependentUpon>ModulePreviewComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\AnimationHelper.cs" />
+    <Compile Include="CoreUi\MainPage\PieChart.xaml.cs">
+      <DependentUpon>PieChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\UniversalButton.xaml.cs">
+      <DependentUpon>UniversalButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\Core.cs" />
+    <Compile Include="Core\CoreData.cs" />
+    <Compile Include="Core\CoreTime.cs" />
+    <Compile Include="Core\EditableItem.cs" />
+    <Compile Include="Core\Validator.cs" />
+    <Compile Include="Core\Course.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\StudentDataBundle.cs" />
+    <Compile Include="CoreUi\ClassesEditor\ClassesEditor.xaml.cs">
+      <DependentUpon>ClassesEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\ClassesEditor\ClassBox.xaml.cs">
+      <DependentUpon>ClassBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Definitions\DefinitionsEditor.xaml.cs">
+      <DependentUpon>DefinitionsEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Homework\HomeworkEditor.xaml.cs">
+      <DependentUpon>HomeworkEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Intro\Intro.xaml.cs">
+      <DependentUpon>Intro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\MainPage\DefinitionPreview.xaml.cs">
+      <DependentUpon>DefinitionPreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\MainPage\HomeworkPreview.xaml.cs">
+      <DependentUpon>HomeworkPreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\MainPage\HomeworkPreviewComponent.xaml.cs">
+      <DependentUpon>HomeworkPreviewComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\MainPage\ModulePreview.xaml.cs">
+      <DependentUpon>ModulePreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\MainPage\NotePreview.xaml.cs">
+      <DependentUpon>NotePreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\MainPage\StructurePreview.xaml.cs">
+      <DependentUpon>StructurePreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Modules\ModulesEditor.xaml.cs">
+      <DependentUpon>ModulesEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Notes\NotesEditor.xaml.cs">
+      <DependentUpon>NotesEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Notes\NoteBox.xaml.cs">
+      <DependentUpon>NoteBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Notes\NotesToolbox.xaml.cs">
+      <DependentUpon>NotesToolbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Reusables\ModuleList.xaml.cs">
+      <DependentUpon>ModuleList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Reusables\ModuleListItem.xaml.cs">
+      <DependentUpon>ModuleListItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Structure\TopicsEditor.xaml.cs">
+      <DependentUpon>TopicsEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Structure\StructureBox.xaml.cs">
+      <DependentUpon>StructureBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchResultsPage.xaml.cs">
+      <DependentUpon>SearchResultsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Misc\ColorChooser.xaml.cs">
+      <DependentUpon>ColorChooser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Misc\EventControl.xaml.cs">
+      <DependentUpon>EventControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\General\EventListControl.xaml.cs">
+      <DependentUpon>EventListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\General\EventListItem.xaml.cs">
+      <DependentUpon>EventListItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\General\EventPanel.xaml.cs">
+      <DependentUpon>EventPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Misc\EventPreview.xaml.cs">
+      <DependentUpon>EventPreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\General\ExtendedTextBox.xaml.cs">
+      <DependentUpon>ExtendedTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Misc\InstanceControl.xaml.cs">
+      <DependentUpon>InstanceControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NoteUI\NoteEditor.xaml.cs">
+      <DependentUpon>NoteEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Notes\NoteFragmentControl.xaml.cs">
+      <DependentUpon>NoteFragmentControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Misc\StartPageControls\BoxInfo.xaml.cs">
+      <DependentUpon>BoxInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Misc\StartPageControls\EventPreviewBox.xaml.cs">
+      <DependentUpon>EventPreviewBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Definitions\DefinitionControl.xaml.cs">
+      <DependentUpon>DefinitionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Modules\ModuleBox.xaml.cs">
+      <DependentUpon>ModuleBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Topics\StructureBlockBox.xaml.cs">
+      <DependentUpon>StructureBlockBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Misc\StartPageControls\NewTimetableBox.xaml.cs">
+      <DependentUpon>NewTimetableBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Misc\StartPageControls\TimetableBox.xaml.cs">
+      <DependentUpon>TimetableBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Homework\HomeworkItem.xaml.cs">
+      <DependentUpon>HomeworkItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TaskPageControls\HomeworkView.xaml.cs">
+      <DependentUpon>HomeworkView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Homework\SimpleDatePicker.xaml.cs">
+      <DependentUpon>SimpleDatePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TaskPageControls\SimpleEventItem.xaml.cs">
+      <DependentUpon>SimpleEventItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\MainPage\TimetableView.xaml.cs">
+      <DependentUpon>TimetableView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CoreUi\Topics\TopicControl.xaml.cs">
+      <DependentUpon>TopicControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="TimetableApp_StoreKey.pfx" />
+    <None Include="TimetableApp_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\file.png" />
+    <Content Include="Assets\Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SmallLogo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\TileLogo.png" />
+    <Content Include="Assets\WideLogo.png" />
+    <Content Include="Assets\empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\help0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\helplong.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="wide-01.png" />
+    <Page Include="CoreUi\Homework\DatePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\ModulePreviewComponent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\PieChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\UniversalButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\ClassesEditor\ClassesEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\ClassesEditor\ClassBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Definitions\DefinitionsEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Homework\HomeworkEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Intro\Intro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\DefinitionPreview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\HomeworkPreview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\HomeworkPreviewComponent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\ModulePreview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\NotePreview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\StructurePreview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Modules\ModulesEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Notes\NotesEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Notes\NoteBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Notes\NotesToolbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Reusables\ModuleList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Reusables\ModuleListItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Structure\TopicsEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Structure\StructureBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SearchResultsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Misc\ColorChooser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Misc\EventControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\General\EventListControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\General\EventListItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\General\EventPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Misc\EventPreview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\General\ExtendedTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Misc\InstanceControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\NoteUI\NoteEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Notes\NoteFragmentControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Misc\StartPageControls\BoxInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Misc\StartPageControls\EventPreviewBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Definitions\DefinitionControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Modules\ModuleBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Topics\StructureBlockBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Misc\StartPageControls\NewTimetableBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Misc\StartPageControls\TimetableBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Homework\HomeworkItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\TaskPageControls\HomeworkView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Homework\SimpleDatePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\TaskPageControls\SimpleEventItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\MainPage\TimetableView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CoreUi\Topics\TopicControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\TaskPageControls\NEXT\" />
+    <Folder Include="UI\VectorIcons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Callisto">
+      <HintPath>..\packages\Callisto.1.2.6\lib\winrt45\Callisto.dll</HintPath>
+    </Reference>
+    <Reference Include="WriteableBitmapEx.WinRT">
+      <HintPath>..\..\WinRT\WriteableBitmapEx.WinRT.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

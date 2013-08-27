@@ -1,0 +1,41 @@
+﻿<UserControl
+    x:Class="TimetableApp.InstanceControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="190" Width="260" Margin="5,0,0,0">
+    
+    <Grid Background="#66FFFFFF">
+    	<ComboBox x:Name="day" HorizontalAlignment="Left" Margin="81,9,0,0" VerticalAlignment="Top" Width="172" SelectedIndex="0">
+    		<ComboBoxItem Content="Monday"/>
+    		<ComboBoxItem Content="Tuesday"/>
+    		<ComboBoxItem Content="Wendsday"/>
+    		<ComboBoxItem Content="Thursday"/>
+    		<ComboBoxItem Content="Friday"/>
+    		<ComboBoxItem Content="Saturday"/>
+    		<ComboBoxItem Content="Sunday"/>
+    	</ComboBox>
+    	<ComboBox x:Name="start1" HorizontalAlignment="Left" Margin="125,61,0,0" VerticalAlignment="Top" Width="64" SelectedIndex="0">
+    		<ComboBoxItem/>
+    	</ComboBox>
+    	<ComboBox x:Name="start2" HorizontalAlignment="Left" Margin="189,61,0,0" VerticalAlignment="Top" Width="64" SelectedIndex="0">
+    		<ComboBoxItem/>
+    	</ComboBox>
+    	<ComboBox x:Name="end1" HorizontalAlignment="Left" Margin="125,116,0,0" VerticalAlignment="Top" Width="64" SelectedIndex="0">
+    		<ComboBoxItem/>
+    	</ComboBox>
+    	<ComboBox x:Name="end2" HorizontalAlignment="Left" Margin="189,116,0,0" VerticalAlignment="Top" Width="64" SelectedIndex="0">
+    		<ComboBoxItem/>
+    	</ComboBox>
+    	<TextBlock HorizontalAlignment="Left" Margin="23,15,0,0" TextWrapping="Wrap" Text="Day" VerticalAlignment="Top" Width="68" Foreground="Black" FontSize="21.333"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="23,67,0,0" TextWrapping="Wrap" Text="Starts at" VerticalAlignment="Top" Width="97" Foreground="Black" FontSize="21.333"/>
+    	<TextBlock HorizontalAlignment="Left" Height="22" Margin="24,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Foreground="Black" FontSize="21.333" Text="Ends at"/>
+    	<Button Content="Delete" HorizontalAlignment="Stretch" Margin="0,156,0,0" VerticalAlignment="Stretch" Click="delete_clicked"/>
+    	<Grid x:Name="error_flag" Margin="0,-3,235,166" Visibility="Collapsed">
+    		<Ellipse HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="25" StrokeThickness="2" Stroke="#FFFF0909" Margin="0,2,0,0"/>
+    		<TextBlock HorizontalAlignment="Left" Height="26" Margin="8,0,0,0" TextWrapping="Wrap" Text="!" VerticalAlignment="Top" Width="8" FontSize="26.667"/>
+    	</Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<local:EditableItem
+    x:Class="TimetableApp.NoteBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="400" Height="Auto" Width="1000" Background="White">
+    
+    <Grid Background="White">
+    	<ScrollViewer Margin="0,65,0,0" Background="{x:Null}">
+    		<StackPanel x:Name="holder" VerticalAlignment="Top" Opacity="0.985" Background="White" Width="1000"/>
+    	</ScrollViewer>
+    	<Grid x:Name="header" Margin="0" Height="65" VerticalAlignment="Top">
+    		<Button x:Name="add" Content="&#xE0B6;" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource AppBarButtonStyle}" Foreground="Black" Height="68" Background="#B3000000"/>
+    		<Button x:Name="edit" Content="&#xE104;" HorizontalAlignment="Right" Margin="0,0,59,0" VerticalAlignment="Top" Style="{StaticResource AppBarButtonStyle}" Foreground="Black" Width="100"/>
+    		<TextBox x:Name="TitleEdit" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="800" Height="65" FontSize="40" Text="Chapter 3" Foreground="Black" Visibility="Collapsed"/>
+    		<TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="15,10,0,0" TextWrapping="Wrap" Text="Chapter3: Thermodynamics and applications" VerticalAlignment="Top" FontSize="40" Width="826"/>
+    	</Grid>
+    </Grid>
+</local:EditableItem>

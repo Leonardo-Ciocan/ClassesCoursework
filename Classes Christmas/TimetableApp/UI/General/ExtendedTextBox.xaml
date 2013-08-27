@@ -1,0 +1,16 @@
+﻿<UserControl
+    x:Class="TimetableApp.ExtendedTextBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="400" Height="108" Width="400">
+    
+    <Grid>
+    	<TextBox x:Name="text_box" HorizontalAlignment="Left" Margin="10,51,0,0" TextWrapping="Wrap" Width="380" FontSize="24" Height="44" VerticalAlignment="Top"/>
+    	<TextBlock x:Name="property_name" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" TextWrapping="Wrap" Text="Property:" VerticalAlignment="Top" Width="180.339" Foreground="Black" FontSize="26.667"/>
+
+    </Grid>
+</UserControl>

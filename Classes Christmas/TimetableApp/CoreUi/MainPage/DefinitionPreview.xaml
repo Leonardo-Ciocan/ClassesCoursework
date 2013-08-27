@@ -1,0 +1,22 @@
+﻿<UserControl
+    x:Class="TimetableApp.DefinitionPreview"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400" Width="390" Margin="0,0,0,15" HorizontalAlignment="Left">
+    
+    <Grid>
+    	<Grid x:Name="header" Height="47" VerticalAlignment="Top" Background="Black">
+    		<TextBlock x:Name="name" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" FontSize="18.667" Foreground="White"/>
+    		<local:UniversalButton x:Name="edit" HorizontalAlignment="Left" Margin="335,-3,0,-1" VerticalAlignment="Top" Icon="&#xE104;" Foreground="White"/>
+    		<local:UniversalButton x:Name="refresh" HorizontalAlignment="Left" Margin="280,-3,0,-1" VerticalAlignment="Top" Icon="&#xE14A;" Foreground="White"/>
+    	</Grid>
+    	<TextBlock x:Name="content" HorizontalAlignment="Left" Margin="10,80,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="210" Width="370" FontSize="16"/>
+    	<TextBlock x:Name="title" HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="23" Width="370" FontSize="18.667"/>
+
+    </Grid>
+</UserControl>

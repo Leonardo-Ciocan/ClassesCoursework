@@ -1,0 +1,16 @@
+﻿<UserControl
+    x:Class="TimetableApp.ModuleListItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400" Height="60" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0"
+    xmlns:cl="using:Callisto.Effects" cl:Tilt.IsTiltEnabled="True">
+	<StackPanel x:Name="stackPanel" HorizontalAlignment="Left" VerticalAlignment="Center">
+		<TextBlock x:Name="name" TextWrapping="Wrap" Text="Module Name" FontSize="24.667" HorizontalAlignment="Left" Foreground="Black" VerticalAlignment="Center" Height="27"/>
+		<TextBlock x:Name="count" TextWrapping="Wrap" Text="14 items" TextAlignment="Center" VerticalAlignment="Center" Foreground="#FFD0D0D0" FontSize="16"/>
+	</StackPanel>
+</UserControl>

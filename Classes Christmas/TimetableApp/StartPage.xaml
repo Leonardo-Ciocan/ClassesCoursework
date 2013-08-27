@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="TimetableApp.StartPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TimetableApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition/>
+    	</Grid.ColumnDefinitions>
+    	<Grid Background="Transparent">
+    		<ScrollViewer Foreground="White" VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+    			<StackPanel x:Name="holder" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    		</ScrollViewer>
+    	</Grid>
+
+    </Grid>
+</Page>
